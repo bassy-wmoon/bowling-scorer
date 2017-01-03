@@ -6,5 +6,4 @@
 
 # Requirement
 - JDK 8
-- MySQL5.7
-
+- MySQL4.1以上
