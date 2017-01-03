@@ -1,6 +1,6 @@
 package bowling.dao;
 
-import bowling.Entity.BaseEntity;
+import bowling.entity.BaseEntity;
 
 import java.sql.*;
 import java.util.Calendar;

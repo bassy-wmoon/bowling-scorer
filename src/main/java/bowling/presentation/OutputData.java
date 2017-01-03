@@ -1,7 +1,7 @@
 package bowling.presentation;
 
-import bowling.Entity.Fail;
-import bowling.Entity.Success;
+import bowling.entity.Fail;
+import bowling.entity.Success;
 import bowling.model.Frame;
 
 import java.util.List;

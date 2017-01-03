@@ -1,7 +1,7 @@
 package bowling.util;
 
-import bowling.Entity.Fail;
-import bowling.Entity.Success;
+import bowling.entity.Fail;
+import bowling.entity.Success;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

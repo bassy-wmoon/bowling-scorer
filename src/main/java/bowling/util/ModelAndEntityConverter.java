@@ -1,6 +1,6 @@
 package bowling.util;
 
-import bowling.Entity.Pin;
+import bowling.entity.Pin;
 import bowling.model.Frame;
 
 /**
@@ -46,8 +46,8 @@ public class ModelAndEntityConverter {
      * @param model モデル
      * @return エンティティ
      */
-    public static bowling.Entity.Frame convertToEntity(bowling.model.Frame model) {
-        bowling.Entity.Frame entity = new bowling.Entity.Frame();
+    public static bowling.entity.Frame convertToEntity(bowling.model.Frame model) {
+        bowling.entity.Frame entity = new bowling.entity.Frame();
         entity.setId(model.getId());
         entity.setFrameNo(model.getFrameNo());
         entity.setScore(model.getScore());
@@ -60,7 +60,7 @@ public class ModelAndEntityConverter {
      * @param entity エンティティ
      * @return モデル
      */
-    public static bowling.model.Frame convertToModel(bowling.Entity.Frame entity) {
+    public static bowling.model.Frame convertToModel(bowling.entity.Frame entity) {
         bowling.model.Frame model = new bowling.model.Frame();
         model.setId(entity.getId());
         model.setFrameNo(entity.getFrameNo());

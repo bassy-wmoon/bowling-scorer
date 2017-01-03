@@ -1,7 +1,6 @@
 package bowling.dao;
 
-import bowling.Entity.Pin;
-import bowling.model.Frame;
+import bowling.entity.Pin;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

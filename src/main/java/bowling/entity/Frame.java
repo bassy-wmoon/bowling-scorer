@@ -1,4 +1,4 @@
-package bowling.Entity;
+package bowling.entity;
 
 /**
  * フレームのエンティティクラス

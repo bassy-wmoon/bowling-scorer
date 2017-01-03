@@ -376,7 +376,7 @@ public class ScoreCalculator {
     private void savePin(Frame frame) throws SQLException {
 
         for (int i = 1; i <= frame.getPins().size(); i++) {
-            bowling.Entity.Pin pinEntity = ModelAndEntityConverter.convertToEntity(frame, i);
+            bowling.entity.Pin pinEntity = ModelAndEntityConverter.convertToEntity(frame, i);
             getPinDao().save(pinEntity);
         }
     }
@@ -495,8 +495,8 @@ public class ScoreCalculator {
      */
     private List<Frame> getFrames(int id) throws SQLException {
 
-        List<bowling.Entity.Frame> frameEntities = getFrameDao().selectById(id);
-        List<bowling.Entity.Pin> pinEntities = getPinDao().selectById(id);
+        List<bowling.entity.Frame> frameEntities = getFrameDao().selectById(id);
+        List<bowling.entity.Pin> pinEntities = getPinDao().selectById(id);
 
         List<Frame> frames = new ArrayList<>();
 
@@ -504,7 +504,7 @@ public class ScoreCalculator {
         frameEntities.forEach(f -> {
             Frame frame = ModelAndEntityConverter.convertToModel(f);
 
-            List<bowling.Entity.Pin> tmpPinEntities = pinEntities
+            List<bowling.entity.Pin> tmpPinEntities = pinEntities
                     .stream()
                     .filter(pin -> pin.getFrameNo().equals(f.getFrameNo()))
                     .map(p -> p)

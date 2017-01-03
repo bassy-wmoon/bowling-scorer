@@ -1,4 +1,4 @@
-package bowling.Entity;
+package bowling.entity;
 
 import java.util.Arrays;
 import java.util.List;
